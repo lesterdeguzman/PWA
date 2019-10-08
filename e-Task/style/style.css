@@ -46,6 +46,7 @@ body {
 /* Masthead */
 
 .masthead {
+    height: 50px;
     flex-basis: 4rem;
     display: flex;
     align-items: center;
@@ -114,7 +115,7 @@ body {
 .logo {
     flex: 1;
     font-family: "Courgette", cursive;
-    font-size: 2.2rem;
+    font-size: 1rem;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.5);
     margin: 0 2rem;
@@ -161,6 +162,7 @@ body {
 }
 
 .board-controls {
+    padding-top: 5px;
     display: flex;
 }
 
@@ -178,7 +180,7 @@ body {
     transition: background-color 150ms;
     padding: 0 0.6rem;
     border-radius: 0.3rem;
-    height: 3rem;
+    height: 4rem;
 }
 
 .board-info-bar .btn:hover {
