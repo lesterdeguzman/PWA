@@ -1,0 +1,16 @@
+{
+  "name": "e-task",
+  "short_name": "e-task",
+  "icons": [
+    {
+      "src": "./images/icon.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ],
+  "theme_color": "#1a6bd5",
+  "background_color": "#000000",
+  "display": "standalone",
+  "scope": "/e-task/",
+  "start_url": "/e-task/index.html"
+}
