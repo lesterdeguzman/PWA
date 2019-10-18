@@ -52,14 +52,18 @@
    <h3 class="list-title">Tasks to Do</h3>
 
    <ul class="list-items" id="tasks">
-     <li>1.1 Create new card </li>
-     <li>1.2 Create new list</li>
-     <li>1.3 Create new board</li>
-     <li>2. Upload files</li>
-     <li>3. Create new board</li>
    </ul>
 
-   <button class="add-card-btn btn" onClick="addCard()">Add a card</button>
+   <button id="toggleList" class="add-card-btn btn">+ Add another card</button>
+   <div class="textbox" hidden>
+   <input type="text" class="addItemInput" placeholder="Enter a title for this card">
+   <button class="addItemButton">Add item</button>
+   <button class="removeItemButton">Remove last item</button>
+
+   
+
+   <!-- <button class="add-card-btn btn" onClick="addCard()">+ Add another card</button> -->
+  </div>
 
  </div>
 </div>
@@ -69,5 +73,6 @@
 <!-- End of lists container -->
 
 <script src="./script/script.js"></script>
+<script src="./script/app.js"></script>
 </body>
 </html>
