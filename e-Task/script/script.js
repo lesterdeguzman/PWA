@@ -13,7 +13,7 @@ function addCard() {
 function addList() {
   var div = document.getElementById("lists-section");
   var inDiv = document.createElement("div");
-  var inner = '<h3 class="list-title">Tasks to Do</h3><ul class="list-items" id="tasks"><li>1.1 Create new card </li><li>1.2 Create new list</li><li>1.3 Create new board</li><li>2. Upload files</li><li>3. Create new board</li></ul><button class="add-card-btn btn" onClick="addCard()">Add a card</button>';
+  var inner = '<h3 class="list-title">Tasks to Do</h3><ul class="list-items" id="tasks"></ul><button class="add-card-btn btn" onClick="addCard()">Add a card</button>';
   inDiv.setAttribute("class", "list");
   inDiv.innerHTML = inner;
   div.appendChild(inDiv);
@@ -33,3 +33,10 @@ function myFunction() {
     x.style.display = "none";
   }
 }
+
+document.getElementById("ul").addEventListener("click",function(e) {
+  var tgt = e.target;
+  if (tgt.tagName.toUpperCase() == "LI") {
+    tgt.parentNode.removeChild(tgt); // or tgt.remove();
+  }
+});
