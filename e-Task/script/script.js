@@ -33,10 +33,3 @@ function myFunction() {
     x.style.display = "none";
   }
 }
-
-document.getElementById("ul").addEventListener("click",function(e) {
-  var tgt = e.target;
-  if (tgt.tagName.toUpperCase() == "LI") {
-    tgt.parentNode.removeChild(tgt); // or tgt.remove();
-  }
-});
